@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gabriel Valdivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Gabriel Valdivia"/>
+    <meta name="description" content="UI/UX Designer & Creative Director living in San Francisco, California."/>
+    <meta name="author" content="Gabriel Valdivia">
+    
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+     <!-- FACEBOOK THUMBNAIL -->
+    <link rel="image_src" href="" />
+
+    <!-- STYLESHEETS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+		<link rel='stylesheet' href='css/tooltips.css'>
+    
+    <!-- FONTS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/pictonic.css">
+    <link href="//get.pictos.cc/fonts/4076/1" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 8]>
+    <script src="js/pictonic.min.js"></script><![endif]-->
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons --> 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.ico">
+  </head>
+
+  <body onload="navIn('');initMenu()">
+  
+		<!--
+		===================================
+		:: HEADER
+		===================================
+		-->
+
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+        
+          <a class="brand" href="index.html" >Gabriel Valdivia</a>
+          
+            <ul id="menu-items" class="nav pull-right">
+              <li class="pictos active"><a href="index.html" title="Profile">g</a></li>
+              <li id="apps" onclick="showMenu()"><a class="pictos" href="#" title="Work">w</a></li>
+              <li><a class="pictos" href="https://medium.com/@gabrielvaldivia" target="_blank" title="Blog">b</a></li>
+            </ul>
+          
+        </div>
+      </div>
+    </header>
+    
+		<!--
+		===================================
+		:: MENU
+		===================================
+		-->
+		
+		<script>
+		function showTip(tip){ document.getElementById(tip).setAttribute("style", "opacity: 1; top: 53px;"); }
+		function hideTip(tip){ document.getElementById(tip).setAttribute("style", "opacity: 0; top: 60px;"); }
+		function navIn(page){
+			if(page == "apps" || page == "articles" || page == "help" || page == "contact") {
+				document.getElementById(page).setAttribute("style", "animation: boing 800ms ease-in-out; -moz-animation: boing 800ms ease-in-out; -webkit-animation: boing 800ms ease-in-out;");
+			}
+		}
+		function initMenu(){
+			document.getElementById('menu').setAttribute("style", "display: none; opacity: 0; pointer-events: none;");
+		}
+		function showMenu(){
+			document.getElementById('menu').style.display = "block";
+			setTimeout("showMenu2()", 0);
+		}
+		function showMenu2(){
+			document.getElementById('menu').setAttribute("style", "opacity: 1; pointer-events: all;");
+			document.getElementById('menu-grid').setAttribute("style", "-o-transform: scale(1); transform: scale(1); -moz-transform: scale(1); -webkit-transform: scale(1);");
+		}
+		function hideMenu(){
+			document.getElementById('menu').setAttribute("style", "opacity: 0; pointer-events: none;");
+			document.getElementById('menu-grid').setAttribute("style", "-o-transform: scale(1.8); transform: scale(1.8); -moz-transform: scale(1.8); -webkit-transform: scale(1.8);");
+			setTimeout("hideMenu2()", 500);
+		}
+		function hideMenu2(){
+			document.getElementById('menu').setAttribute("style", "display: none; opacity: 0; pointer-events: none;");
+		}
+	</script>
+
+		<div id="menu" onclick="hideMenu()">
+			<div id="menu-grid">
+				<div id="menu-automatic" class="menu-item"><a target="_blank" href="http://dribbble.com/gabrielvaldivia/projects/110028-Automatic">Automatic</a></div>
+				<div id="menu-cafepress" class="menu-item"><a target="_blank" href="http://dribbble.com/gabrielvaldivia/projects/123387-Cafepress-Mobile-Site">Cafepress</a></div>
+				<div id="menu-sleep-number" class="menu-item-last"><a target="_blank" href="http://dribbble.com/gabrielvaldivia/projects/123389-Sleep-Number">Sleep Number</a></div>
+				<div id="menu-diary" class="menu-item"><a target="_blank" href="http://dribbble.com/gabrielvaldivia/projects/110013-3-2-1-Diary-iPhone-App">3-2-1 Diary</a></div>
+				<div id="menu-logos" class="menu-item"><a target="_blank" href="http://dribbble.com/gabrielvaldivia/projects/110023-Branding">Branding</a></div>
+				<div id="menu-print" class="menu-item-last"><a target="_blank" href="http://dribbble.com/gabrielvaldivia/projects/110018-Print">Print</a></div>
+			</div>
+		</div>    
+		    
+		    
+		<!--
+		===================================
+		:: CONTENT
+		===================================
+		-->
+		    
+    <!-- INTRO -->
+    	<div id="intro" class="row-fluid slide-title slide-intro ">
+    	<div class="container">
+	    	<div class="span12">
+		    	<h1>I'm a UI/UX Designer & Creative Director living in San Francisco, California.</h1>
+	    	</div>
+	    	</div>
+    	</div>
+
+    <!-- MAP -->
+    	<div id="map" class="row-fluid slide-map">
+    	<div class="container">
+	    	<div class="span12">
+		    	<h2>I come from a land far, far away.</h2>
+	    	</div>
+	    	</div>
+    	</div>
+
+    <!-- WORKSPACE -->
+    	<div class="row-fluid slide-workspace">
+    	<div class="container">
+	    	<div class="span12">
+		    	<h2>I am passionate about great product design, branding, & typography.</h2>
+		    	<p>Currently helping make the world more open <br/>& connected at Facebook.</span></p>
+	    	</div>
+	    	</div>
+    	</div>
+    	
+   <!-- BRANDS -->
+    	<div class="row-fluid slide-brands">
+    	<div class="container">
+	    	<div class="span12">
+		    	<h2>I've had the pleasure of working with these amazing brands.</h2>
+	    	</div>
+	    	<div class="row row-brands">
+	    	<div class="span12 brands"><img src="img/brands.png"></div>
+	    	</div>
+
+	    	</div>
+    	</div>
+    	
+    <!-- CONTACT -->
+    	<div class="row-fluid slide-contact">
+    	<div class="container">
+	    	<div class="span12">
+		    	<h3>Sometimes, I like to play ball on <a target="_blank" href="http://www.dribbble.com/gabrielvaldivia" class="icon-dribbble"></a> and exercise brevity on <a target="_blank" href="http://www.twitter.com/gabrielvaldivia" class="icon-twitter-3"></a>. You can contact me through <a href="mailto:hello@gabrielvaldivia.com" class="icon-gmail"></a>, or connect with me on <a target="_blank" href="http://www.linkedin.com/in/gabrielvaldivia/" class="icon-linkedin"></a>.</h3>
+	    	</div>
+	    	</div>
+    	</div>
+
+		<!--
+		===================================
+		:: JAVASCRIPT
+		===================================
+		-->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		
+		<!--[if !IE | (gt IE 8)]><!-->
+		<script src="js/tooltips.js"></script>
+		<script>
+			$(function() {
+				$("#menu-items a[title]").tooltips();
+			});
+		</script>
+		<!--<![endif]--> 
+		
+    <!-- Google Analytics -->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-16624117-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+    
+    <!-- Auto resize first section based on window size (needs to be desactivated on screens < 979px)-->
+    <!--<script>
+	    var height = $(window).height(); 
+			$("#intro").height(height);
+	    $("div#map").css("margin-top", Math.max(0, $(window).height())+"px");
+    </script>-->
+    
+  </body>
+</html>

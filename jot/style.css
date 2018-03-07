@@ -1,0 +1,241 @@
+body {
+	font-family: SF UI Display, Helvetica Neue, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	overflow: hidden;
+	background-color: #f5f5f5;
+}
+
+
+h1 {
+	font-size: 3.5vw;
+	font-weight: 700;
+	color: #373737;
+	margin-top:40vh;
+	margin-left:5vw;
+	width: 50vw;
+}
+
+.app-store {
+	font-size: 1.2vw;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: .5vw;
+	padding: 1vw 1.5vw;
+	margin-left: 5vw;
+	text-transform: uppercase;
+	opacity: .3;
+	text-decoration: none;
+	color: black;
+	
+	        transition: opacity .2s ease-out;
+         -o-transition: opacity .2s ease-out;
+       -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+	
+}
+
+.app-store:hover {
+	opacity: 1;
+}
+
+.phone {
+	background-color: white;
+	position: absolute;
+	z-index: -2;
+	height: 84vh;
+	width: 48vh;
+	border-radius: 8vh 8vh 0vh 0vh;
+	bottom:0;
+	right: 15vh;
+	box-shadow: 0px 1px 120px rgba(0,0,0,0.1);
+}
+
+.camera {
+	background-color: rgba(0,0,0,0.05);
+	height: 2%;
+	width: 3.7%;
+	position: relative;
+	top:5vh;
+	left: 16vh;
+	z-index: 1000;
+	border-radius: 2vh;
+}
+
+.antenna {
+	background-color: rgba(0,0,0,0.05);
+	height: 2%;
+	width: 20%;
+	position: relative;
+	top:3.4vh;
+	left: 19vh;
+	z-index: 1000;
+	border-radius: 2vh;
+}
+
+.rim {
+	position: absolute;
+	background-color: black;
+	bottom:0vh;
+	left: 3.5vh;
+	width: 41vh;
+	height: 84.7%;
+	border-radius: .4vh .4vh 0vh 0vh;
+}
+
+.screen {
+	max-height: 1334px;
+	max-width: 750px;
+	height:100%;
+	width: 83%;
+	margin: 10vh auto 0vh auto;
+	position: relative;
+	bottom: 0;
+	z-index: 999;
+	
+	
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 50% 5%;
+	font-size: 5vh;
+	background: red; /* not working, let's see some red */
+    background: -moz-linear-gradient( top ,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%);
+   background: -webkit-gradient(linear,  left top,  left bottom, 
+        color-stop(0%, rgba(255, 0, 0, 1)), 
+        color-stop(15%, rgba(255, 255, 0, 1)),
+        color-stop(30%, rgba(0, 255, 0, 1)),
+        color-stop(50%, rgba(0, 255, 255, 1)),
+        color-stop(65%, rgba(0, 0, 255, 1)),
+        color-stop(80%, rgba(255, 0, 255, 1)),
+        color-stop(100%, rgba(255, 0, 0, 1)));     
+}
+
+.screen a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.screen img {
+	width: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 4vw;
+	left: 5vw;
+	color:rgba(0,0,0,0.3);
+	font-size: 1vw;
+}
+
+
+
+.footer a {
+	text-decoration: none;
+	color:rgba(0,0,0,0.3);
+	
+	        transition: color .2s ease-out;
+         -o-transition: color .2s ease-out;
+       -moz-transition: color .2s ease-out;
+    -webkit-transition: color .2s ease-out;
+
+}
+
+.footer a:hover {
+	opacity: 1;
+	color:rgba(0,0,0,1);
+}
+
+
+
+
+/* BLINKING CURSOR */
+
+
+
+.blinking-cursor {
+  font-weight: 700;
+  font-size: 4vw;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: blue;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: blue;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: blue;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: blue;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: blue;
+  }
+}
+
+
+@media ( max-width : 960px ) {
+
+
+.phone {
+	position: absolute;
+	z-index: -2;
+	height: 84vh;
+	width: 48vh;
+	border-radius: 8vh 8vh 0vh 0vh;
+	bottom:0;
+	right: 50%;
+	margin-right: -24vh;
+}
+
+.hide {
+	display: none;
+}
+
+}

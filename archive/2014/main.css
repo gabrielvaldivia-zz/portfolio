@@ -1,0 +1,327 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	min-height: 500px;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+/* PADDING */
+
+#top, #bottom, #left, #right {
+    background: #fff;
+    z-index: 1000;
+}
+
+#left, #right {
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    position: fixed;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15px;
+    position: fixed;
+}
+
+#top {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 15px;
+}
+
+
+/* CONTAINERS */
+
+
+.containerLeft {
+	width: 50%;
+	height: 100%;
+	background-color: #00cca8;
+	float:left;
+	background-image: url(img/profile.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.containerRight {
+	width: 50%;
+	height: 100%;
+	padding: 0;
+	float:left;
+}
+
+.containerTopRight {
+	width: 100%;
+	height: 60%;
+	background-color: #323d52;
+}
+
+.containerBottomRight {
+	width: 100%;
+	height: 40%;
+}
+
+.containerBottomRightLeft {
+	width: 45%;
+	height: 100%;
+	float:left;
+}
+
+
+.containerBottomRightRight {
+	width: 55%;
+	height: 100%;
+	float:left;
+}
+
+
+.containerTwitter {
+	background-color: #8c96a0;
+	float:left;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+
+
+.containerDribbble {
+	background-color: #97758f;
+	float:left;
+	width: 48%;
+	height: 48%;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+.containerLinkedin {
+	background-color: #1893e2;
+	float:left;
+	width: 52%;
+	height: 48%;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+
+.containerMedium {
+	background-color: #714b9d;
+	float:left;
+	width: 48%;
+	height: 52%;
+	position: relative;
+	text-align: center;
+}
+
+.containerEmail {
+	background-color: #ca745b;
+	float:left;
+	width: 52%;
+	height: 52%;
+	position: relative;
+	text-align: center;
+}
+
+
+/* ALIGNMENT & SIZING */
+
+.center {
+	position: absolute;
+	top:50%;
+	margin: auto;
+	margin-top:-30px;
+	left:50%;
+	margin-left: -30px;
+}
+
+.description {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.socialIcons {
+	width: 60px;
+	height: 60px;
+}
+
+
+h1 {
+	font-family: 'Karla', sans-serif;
+	font-weight: 300;
+	font-size: 60px;
+	letter-spacing: -1px;
+	color: #9db2e1;
+	display: block;
+	
+}
+
+h1 span {
+	color:#fff;
+}
+
+h1 a {
+	color: #9db2e1;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	text-decoration: underline;
+}
+
+p {
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1500px) {h1 {font-size: 60px;} .socialIcons {width: 60px; height: 60px;} .center {margin-top: -30px; margin-left: -30px;}
+@media (max-width: 1400px) {h1 {font-size: 50px;} .socialIcons {width: 54px; height: 54px;} .center {margin-top: -27px; margin-left: -27px;}
+@media (max-width: 1300px) {h1 {font-size: 46px;} .socialIcons {width: 50px; height: 50px;} .center {margin-top: -25px; margin-left: -25px;}
+@media (max-width: 1200px) {h1 {font-size: 44px;} .socialIcons {width: 44px; height: 44px;} .center {margin-top: -22px; margin-left: -22px;}
+@media (max-width: 1100px) {h1 {font-size: 40px;} .socialIcons {width: 40px; height: 40px;} .center {margin-top: -20px; margin-left: -20px;}
+@media (max-width: 1000px) {h1 {font-size: 38px;} .socialIcons {width: 34px; height: 34px;} .center {margin-top: -17px; margin-left: -17px;}
+@media (max-width: 900px) {h1 {font-size: 34px;}  .socialIcons {width: 30px; height: 30px;} .center {margin-top: -15px; margin-left: -15px;}
+
+
+@media (max-width: 750px) {
+
+#top, #bottom, #left, #right {
+/* 	display: none; */
+}
+
+#left, #right {
+    width: 6px;
+}
+
+#bottom, #top {
+    height: 6px;
+}
+
+
+.containerLeft {
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.containerRight {
+	width: 50%;
+}
+
+.containerTopRight {
+	height: 50%;
+}
+
+
+.containerBottomRight {
+	height: 50%;
+}
+
+
+/* TWITTER */
+
+.containerBottomRightLeft {
+	width: 100%;
+	height: 33%;
+}
+
+
+/* Everything else */
+
+.containerBottomRightRight {
+	width: 100%;
+	height: 50%;
+}
+
+.containerDribbble, .containerLinkedin, .containerMedium, .containerEmail {
+	width: 50%;
+	height: 67%;
+}
+
+.socialIcons {
+	width: 30px;
+	height: 30px;
+}
+
+.center {
+	margin-left: -15px;
+	margin-top: -15px;
+}
+
+.description {
+	position: inherit;
+	transform: inherit;
+	margin: 0 auto;
+	top: 0;
+	padding-top: 90px;
+}
+
+h1 {
+	font-size:18px;
+}
+
+}
+
+
+/*
+@media (max-width: 640px) {
+
+
+
+.containerRight, .containerTopRight {
+	height: 190px;
+}
+
+.description {
+	margin-top: 30px;
+}
+
+.socialIcons {
+	width: 25px;
+	height: 25px;
+}
+
+.center {
+	margin-top: -12.5px;
+	margin-left: -12.5px;
+}
+
+.containerBottomRightLeft, .containerBottomRightRight, .containerDribbble, .containerLinkedin, .containerMedium, .containerEmail {
+	height: 60px;
+}
+*/
