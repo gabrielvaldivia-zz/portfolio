@@ -843,6 +843,8 @@ footer .left, footer .right, footer .right p {
 	text-align: center;
 	margin: 0;
 	border: none;
+	padding: 20px 40px;
+	box-sizing: border-box;
 }
 
 footer .right {
