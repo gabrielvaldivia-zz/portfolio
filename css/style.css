@@ -170,8 +170,8 @@ h6 {
 
 
 p {
-    margin: 10px 0px 30px 0;
     padding: 0;
+    margin: 0 0 10px 0;
     font-size: 18px;
     line-height: 26px;
     opacity: .7;    
@@ -376,6 +376,10 @@ ul.work > :nth-child(2) {
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
+.description p {
+    margin: 10px 0px 30px 0;
+}
+
 
 .video {
     position: absolute;
@@ -508,6 +512,7 @@ footer .right, footer .right p {
 	display: flex;
 	flex-direction:column;
 	width: 100%;
+	padding-bottom: 5px;
 }
 
 .timeline > li {
@@ -523,7 +528,7 @@ footer .right, footer .right p {
   width: 100px;
   float: left;
   margin-left: -38px;
-  padding: 5px 20px 4px 0;
+  padding: 15px 20px 4px 0;
   text-align: right;
   font-family: 'synebold';
 }
@@ -547,10 +552,13 @@ footer .right, footer .right p {
   top: 24px;
   border-radius: 100%;
 }
+{
+/*.timeline-date p {
+	margin: 0px 0;
+}*/
 
-.timeline-content p {
-	margin: 0;
-	padding: 0px 0px 10px 0px;
+.timeline p {
+	margin: 0 !important;
 }
 
 
