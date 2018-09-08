@@ -676,7 +676,7 @@ li.section:nth-child(odd) .description {
 
 .wrapper {
 	padding-left: 0;
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 .button {
@@ -855,11 +855,16 @@ footer .right {
 
 /*MOBILE > TIMELINE*/
 
+.timeline {
+	margin:0;
+	padding: 0;
+}
+
 .timeline-date {
   width: 50px;
+  margin: 14px 0 0 0;
   float: left;
-/*  margin-left: -38px;
-*/  padding: 5px 20px 4px 0;
+  padding: 5px 20px 4px 0;
   text-align: right;
   font-family: 'synebold';
 }
@@ -867,7 +872,7 @@ footer .right {
   border-left: 2px #ccc solid;
   padding-left: 20px;
   float:none;
-  margin-left:32px;
+  margin-left:70px;
   width: auto;
 }
 
@@ -878,7 +883,7 @@ footer .right {
   height: 8px;
   border: 2px solid #ccc;
   background: white;
-  left: 27px;
+  left: 65px;
   top: 24px;
   border-radius: 100%;
 }
