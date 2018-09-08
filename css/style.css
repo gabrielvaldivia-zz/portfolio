@@ -676,6 +676,7 @@ li.section:nth-child(odd) .description {
 
 .wrapper {
 	padding-left: 0;
+	padding-top: 60px;
 }
 
 .button {
@@ -863,6 +864,30 @@ li.section:nth-child(even) .description {
   top: 24px;
   border-radius: 100%;
 }
+
+/*MOBILE > MUSIC*/
+
+.albums {
+	padding-top: 4vw;
+}
+
+.albums li {
+	float: left;
+	margin: 0;
+	margin-bottom: 8vw;
+}
+
+.albums li:hover {
+}
+
+
+.album-art {
+	border: 0; 
+	width: 85vw;
+	min-width: 0;
+	height: 450px;
+}
+
 
 }
 
