@@ -834,6 +834,22 @@ li.section:nth-child(even) .description {
 	background-position-x: 10%;
 }
 
+/* MOBILE > FOOTER */
+
+
+
+footer .left, footer .right, footer .right p {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	border: none;
+}
+
+footer .right {
+	padding: 0;
+	padding-bottom: 40px;
+}
+
 
 /*MOBILE > TIMELINE*/
 
