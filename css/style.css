@@ -482,7 +482,7 @@ footer .right, footer .right p {
 
 .albums li {
 	float: left;
-	margin: 40px;
+	margin: 2vw;
 }
 
 .albums li:hover {
@@ -491,7 +491,8 @@ footer .right, footer .right p {
 
 .album-art {
 	border: 0; 
-	width: 450px;
+	width: 27vw;
+	min-width: 400px;
 	height: 450px;
 }
 
@@ -831,6 +832,37 @@ li.section:nth-child(even) .description {
 	background-image: url(../img/fbspaces-mobile.png);
 	background-position: center 10%;
 	background-position-x: 10%;
+}
+
+
+/*MOBILE > TIMELINE*/
+
+.timeline-date {
+  width: 50px;
+  float: left;
+/*  margin-left: -38px;
+*/  padding: 5px 20px 4px 0;
+  text-align: right;
+  font-family: 'synebold';
+}
+.timeline-content {
+  border-left: 2px #ccc solid;
+  padding-left: 20px;
+  float:none;
+  margin-left:32px;
+  width: auto;
+}
+
+.timeline-content:before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 2px solid #ccc;
+  background: white;
+  left: 27px;
+  top: 24px;
+  border-radius: 100%;
 }
 
 }
