@@ -117,9 +117,9 @@ h1 {
 
 h2 {
     font-size: calc(16px + 1.5vw);
-    line-height: calc(18px + 2.5vw);
+    line-height: 2.5vw;
     display: block;
-    margin: 0;
+    margin: 10px 0 20px 0;
     padding: 0;
     font-family: 'synebold';
     font-weight: 900;
