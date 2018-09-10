@@ -205,7 +205,7 @@ a {
 	float: right;  
 	font-size: calc(10px + .1vw);
 	letter-spacing: 1px;
-    opacity: .7;
+	opacity: .7;
 	display: inline-block;
 	text-transform: uppercase;
 	color: white;
@@ -740,7 +740,7 @@ h6 {
 	min-width: 0;
 	height: 44px;
 	padding: 8px 10px;
-    transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
 
