@@ -20,7 +20,7 @@ body {
 .header {
 	position: fixed;
 	margin-top: 100vh;
-	background-color: black;
+	background-color: #343434;
 	width: 100vh;
 	min-width: 600px;
 	height: 60px;
