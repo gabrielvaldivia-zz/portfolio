@@ -550,9 +550,13 @@ footer .right p {
 }
 
 .timeline p {
-	margin: 0 !important;
-}
+/*	margin: 0 !important;
+*/}
 
+.timeline-content p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
 
 .timeline-content p a {
 	font-style: italic;	
@@ -847,6 +851,9 @@ li.section:nth-child(even) .description {
 /* MOBILE > FOOTER */
 
 
+footer {
+	margin-top: 4px;
+}
 
 footer .left, footer .right, footer .right p {
 	width: 100%;
@@ -859,7 +866,11 @@ footer .left, footer .right, footer .right p {
 
 footer .right {
 	padding: 0;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+footer .left {
+	border-top: 2px #f1f1f1 solid; 
 }
 
 
