@@ -535,6 +535,7 @@ footer .right p {
 	display: block;
 	padding: 20px 20px 0px 20px;
 	float:left;
+	width: 80%;
 }
 
 .timeline-content:before {
