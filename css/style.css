@@ -147,7 +147,7 @@ h3 {
 h4 {
 	font-family: 'Chivo';
 	font-weight: bolder;
-	font-size: calc(18px + .2vw);
+	font-size: calc(16px + .15vw);
 	margin: 0;
 }
 
@@ -421,6 +421,47 @@ a {
 	margin-right:0;
 }
 
+/*----- SIDE PROJECTS ----- */
+
+.side-projects {
+	display: block;
+}
+
+.side-projects, .side-projects h1 {
+	background-color: #fff;		
+}
+
+.side-projects li {
+	position: relative;
+
+	display: inline-block;
+	background-color: yellow;
+
+	padding: 0;
+    list-style-type: none !important;
+    margin: 4vw 2vw 0vw 0vw;
+
+    box-sizing: border-box;
+
+    width: 20vw;
+    min-width: 200px;
+    height: 30vw; 
+    min-height: 260px;
+}
+
+.side-projects ul > :first-child {
+	margin-left:0;
+}
+
+.side-projects ul > :last-child {
+	margin-right:0;
+}
+
+.side-projects img {
+	width: 100%;
+	object-fit: cover;
+}
+
 	
 	
 /*---- WORK ----*/
@@ -513,6 +554,7 @@ a {
 
 .fb-photos {
 	background-image: url(../img/360-photos.jpg);
+	background-position: right;
 }
 
 .facebook-stories {
@@ -523,38 +565,6 @@ a {
 	background-image: url(../img/automatic.jpg);
 }
 
-
-/*----- SIDE PROJECTS ----- */
-
-.side-projects {
-	display: block;
-}
-
-.side-projects, .side-projects h1 {
-	background-color: #fff;		
-}
-
-.side-projects li {
-	display: inline-block;
-	background-color: yellow;
-	padding: 0;
-    list-style-type: none !important;
-    margin: 4vw 2vw 0vw 0vw;
-    box-sizing: border-box;
-    width: 20vw;
-    min-width: 200px;
-    height: 30vw; 
-    min-height: 260px;
-	position: relative;
-}
-
-.side-projects ul > :first-child {
-	margin-left:0;
-}
-
-.side-projects ul > :last-child {
-	margin-right:0;
-}
 
 /*---- FOOTER ----*/
 
@@ -728,7 +738,7 @@ footer .right p {
 
 /* DESKTOP > ESSAYS */
 
-.essays li {
+.essays li, .side-projects li {
 	width: 40vw;
 }
 	
@@ -775,8 +785,8 @@ li.project:nth-child(even) .description {
 }
 
 
-.essays li {
-	width: 20vw;
+.essays li, .side-projects li {
+	width: 19.5vw;
 }
 	
 }
@@ -808,8 +818,8 @@ li.project:nth-child(even) .description {
 p {
 	margin: 10px 0px;
 	padding: 0;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 22px;
 	font-weight: 300;
 }
 
@@ -817,6 +827,10 @@ p {
 
 h3 {
 	margin-top: 60px;
+}
+
+h4 {
+	font-size: 15px;
 }
 
 h6 {
@@ -872,11 +886,11 @@ h6 {
 /* MOBILE > ESSAYS  */
 
 .essays li {
-	width: 40vw;
+	width: 42vw;
 	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
 }
 
-.essays li:nth-child(even) {
+.essays li:nth-child(even), .side-projects li:nth-child(even) {
 	margin-right: 0;
 }
 
