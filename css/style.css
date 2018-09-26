@@ -22,7 +22,7 @@ body {
 	font-size: 12px;
 	padding: 8px 15px 8px 10px;
 	color: inherit;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	box-sizing: border-box;
 	font-family: 'Space Mono', monospace;
 	text-transform: uppercase;
@@ -33,13 +33,26 @@ body {
 
 .button:hover {
 	opacity: 1;
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .button:after {
 	position: relative;
 	content: '   →';
 
+}
+
+.section {
+	width: 100%;
+	float: left;
+	padding: 4vw 4vw 16vw 4vw;
+	box-sizing: border-box;
+}
+
+.section ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -134,7 +147,7 @@ h3 {
 h4 {
 	font-family: 'Chivo';
 	font-weight: bolder;
-	font-size: calc(18px + .5vw);
+	font-size: calc(18px + .2vw);
 	margin: 0;
 }
 
@@ -175,6 +188,8 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
+
 
 /*---- HEADER ----*/
 
@@ -263,25 +278,24 @@ a {
 
 
 
-/*---- ESSAYS ----*/
+/*---- ESSAYS & TALKS ----*/
 
-
-.essays {
-	padding: 4vw;
+/*
+.essays-talks {
 	padding-bottom: calc(40px + 4vw);
 	background-color: #f7f7f7;
 }
 
-.essays h1 {
+.essays-talks h1 {
 	background-color: #f7f7f7;
 }
 
 
-.essays h2 {
+.essays-talks h2 {
 	margin-left: -30px;
 }
 
-.essays ul {
+.essays-talks ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -289,7 +303,7 @@ a {
 	padding-top: 4vw;
 }
 
-.essays li {
+.essays-talks li {
 	position: relative;
 	padding: 2vw 2vw 6vw 2vw;	
 	list-style-type: none !important;
@@ -299,23 +313,112 @@ a {
 	transition: opacity, background-color, box-shadow 0.2s ease-out;
 }
 
-.essays li:hover {
+.essays-talks li:hover {
 	opacity: 1;
 	background-color: white;
 	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
 }
 
-.essays a {
+.essays-talks a {
 	text-decoration: none;
 }
 
-.essays a:visited {
+.essays-talks a:visited {
 	color: black;
 }
 
-.essays li .button {
+.essays-talks li .button {
 	position: absolute;
 	bottom: 10%;
+}*/
+
+
+
+/*----- ESSAYS ----- */
+
+.essays {
+	display: block;
+}
+
+.essays, .essays h1 {
+	background-color: #f7f7f7;		
+}
+
+.essays li {
+	display: inline-block;
+	background-color: gray;
+	padding: 0;
+    list-style-type: none !important;
+    margin: 4vw 2vw 0vw 0vw;
+    box-sizing: border-box;
+    min-width: 175px;
+    height: 30vw; 
+    min-height: 260px;
+	position: relative;
+}
+
+.essays li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+/*	mix-blend-mode: multiply;*/
+}
+
+.essays ul > :first-child {
+	margin-left:0;
+}
+
+.essays ul > :last-child {
+	margin-right:0;
+}
+
+.title {
+	position: absolute;
+	bottom: 0;
+	padding: 2vw;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.essays li:hover {
+	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
+	margin-top: 3vw;
+}
+
+
+/*----- TALKS ----- */
+
+.talks {
+	display: block;
+}
+
+.talks, .talks h1 {
+	background-color: #fff;	
+	min-height: 600px;
+}
+
+.talks li {
+	display: inline-block;
+	background-color: yellow;
+	padding: 0;
+    list-style-type: none !important;
+    margin: 4vw 2vw 0vw 0vw;
+    box-sizing: border-box;
+	position: relative;
+
+	width: 42vw;
+    min-width: 160px;
+    min-height: 90px;
+    height: 20vw;
+}
+
+.talks ul > :first-child {
+	margin-left:0;
+}
+
+.talks ul > :last-child {
+	margin-right:0;
 }
 
 	
@@ -323,47 +426,68 @@ a {
 /*---- WORK ----*/
 
 
-.work {
-	-webkit-padding-start: 0;
-	list-style-type: none !important;
-	padding: 4vw;
-	margin: 0 auto;
-	background-color: white;
+
+.work, .work h1 {
+	background-color: #1f1f1f;
+	color: white;
 }
 
 .work h1 {
-	background-color: white;
+	margin-left: 0;
+	z-index: 2;
 }
 
-.section {
-	width: 67vw;
-	height: 37.9vw;
-	margin: 20vw 0;
+.section.work {
+	padding: 0;
+}
+
+.work {
+	position: relative;
+}
+
+.gradient {
+	box-sizing: border-box;
+	position: absolute;
+	top: -50px;
+/*	height: 15vh;*/
+	min-height: 200px;
+	width: 100%;
+	z-index: 1;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f1f1f+0,1f1f1f+50,1f1f1f+100&1+0,1+50,0+100 */
+	background: -moz-linear-gradient(top, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 50%, rgba(31,31,31,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(31,31,31,1) 0%,rgba(31,31,31,1) 50%,rgba(31,31,31,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(31,31,31,1) 0%,rgba(31,31,31,1) 50%,rgba(31,31,31,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#001f1f1f',GradientType=0 ); /* IE6-9 */
+}
+
+.project {
+	width: 100%;
+	height: 100vh;
+	margin:0;
 	position: relative;
     
 	box-sizing: border-box;
 	background-color: black;
-	border: 3px solid black;
 	
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-    
-	transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
-}
 
-ul.work > :nth-child(2) {
-	margin-top: 5vw;
 }
 
 
 .description {
 	width: 100%;
+	color: #fff;
 	box-sizing: border-box;
+
 	position: absolute;
+	top: 50%;
+	margin-top: -140px;
+
 	padding: 20px;
-	border: 3px solid black;
-	background-color: white;
+/*	border: 3px solid black;
+	background-color: white;*/
 	z-index: 2;
 	transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
@@ -381,40 +505,18 @@ ul.work > :nth-child(2) {
 	z-index: 1;
 }
 
-.facebook-spaces {
-}
 
 
 .facebook-360 {
+	background-image: url(../img/facebook-360.jpg);
 }
 
 .fb-photos {
-}
-
-
-.talk-turkey {
-	background-image: url(../img/talk-turkey.jpg);
-}
-
-
-.peek {
-	background-image: url(../img/peek.jpg);
+	background-image: url(../img/360-photos.jpg);
 }
 
 .facebook-stories {
 	background-image: url(../img/facebook-stories.jpg);
-}
-
-.facebook-composer {
-	background-image: url(../img/facebook-composer.jpg);
-}
-
-.facebook-pages {
-	background-image: url(../img/facebook-pages.jpg);
-}
-
-.facebook-360 {
-	background-image: url(../img/facebook-360.jpg);
 }
 
 .automatic {
@@ -422,6 +524,37 @@ ul.work > :nth-child(2) {
 }
 
 
+/*----- SIDE PROJECTS ----- */
+
+.side-projects {
+	display: block;
+}
+
+.side-projects, .side-projects h1 {
+	background-color: #fff;		
+}
+
+.side-projects li {
+	display: inline-block;
+	background-color: yellow;
+	padding: 0;
+    list-style-type: none !important;
+    margin: 4vw 2vw 0vw 0vw;
+    box-sizing: border-box;
+    width: 20vw;
+    min-width: 200px;
+    height: 30vw; 
+    min-height: 260px;
+	position: relative;
+}
+
+.side-projects ul > :first-child {
+	margin-left:0;
+}
+
+.side-projects ul > :last-child {
+	margin-right:0;
+}
 
 /*---- FOOTER ----*/
 
@@ -550,9 +683,7 @@ footer .right p {
 	border-radius: 100%;
 }
 
-.timeline p {
-/*	margin: 0 !important;
-*/}
+.timeline p {}
 
 .timeline-content p {
 	margin: 0;
@@ -584,18 +715,7 @@ footer .right p {
 /* DESKTOP > INTRO */
 
 
-/*.intro {
-	background-image: url(../img/profile2.jpg);
-	background-size: 90vh auto;
-	background-repeat: no-repeat;
-	background-position: 35vw 0vw;
-}
-*/
-
-
-.intro p {
-/*     max-width: 570px; */
-}
+.intro p {}
 
 .intro .left {
 	width: 100%;
@@ -609,7 +729,7 @@ footer .right p {
 /* DESKTOP > ESSAYS */
 
 .essays li {
-	width: 40%;
+	width: 40vw;
 }
 	
 
@@ -617,31 +737,22 @@ footer .right p {
 /* DESKTOP > WORK */
 
 
-li.section:nth-child(odd) {
-	right: -20%;
-}
-
 .description {
 	width: 50vw;
 	max-width: 500px;
 	position: absolute;
-	right: -15vw;
+	right: 4vw;
 	padding: 40px;
 }
 
 
-.description:hover {
-	transform: scale(1.01);
-	box-shadow: -10px 10px 0px 0px black;
-}
-
-li.section:nth-child(odd) .description:hover {
-	box-shadow: 10px 10px 0px 0px black;
-}
+.description:hover {}
 
 
-li.section:nth-child(odd) .description {
-	left: -15vw;
+
+
+li.project:nth-child(even) .description {
+	left: 4vw;
 	right: auto;
 }​
 
@@ -665,13 +776,14 @@ li.section:nth-child(odd) .description {
 
 
 .essays li {
-	width: 26%;
+	width: 20vw;
 }
 	
 }
 
 
 /*-------- MOBILE --------*/
+
 @media only screen and (max-width: 720px)  {
 
 
@@ -701,12 +813,18 @@ p {
 	font-weight: 300;
 }
 
+
+
 h3 {
 	margin-top: 60px;
 }
 
 h6 {
 	font-size: 10px;
+}
+
+.section {
+	padding-bottom: 80px;
 }
 
 
@@ -751,103 +869,83 @@ h6 {
 
 
 
-/* MOBILE > ESSAYS */
-
-.essays {
-	padding-bottom: 14vw;
-}
-
-.essays ul {
-/*	padding-top: 10vw;
-*/}
+/* MOBILE > ESSAYS  */
 
 .essays li {
-	padding: 4vw 4vw 14vw 4vw;	
-	margin: 0;
-	margin-bottom: 20px;
-	width: 100% !important;
-	background-color: white;
+	width: 40vw;
 	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
-	opacity: 1;
-
 }
 
-.essays li:hover {
-/*	background-color: transparent;
-	box-shadow: none;
-*/}
+.essays li:nth-child(even) {
+	margin-right: 0;
+}
 
-.essays li:nth-child(n+4) {
-	display: none;
+.title {
+	padding: 4vw;
 }
 
 /* MOBILE > WORK */
 
 
-.section {
-	margin-bottom: 5vw;
-	margin-top: 5vw;
+.gradient {
+	margin-top: 20px;
+}
+
+.project {
 	overflow: hidden;
-	height: calc(300px + 20vw);
+	height: calc(500px + 20vw);
 }
 
 .description {
-/*	background-color: white;
-*/	border: none;
+	border: none;
+	position: absolute;
+	top: auto;
 }
 
-li.section {
+li.project {
 	width: 100%;
 	margin-left: 0;
+	margin-bottom: 0;
 }
 
-li.section .description {
+li.project .description {
 	left: 0;
 	right: auto;
 	bottom: 0;
 }​
 
-li.section:nth-child(even) .description {
+li.project:nth-child(even) .description {
 	right: 0;
 	left: auto;
 	bottom: 0;
 }
 
 
+
 .video {
 	display: none;
 }
 
-.automatic {
-	background-position-x: 10%;
-}
 
-.peek {
-	background-position-x: 20%;
-}
-
-.talk-turkey {
-	background-position-x: 70%;
-}
-
-.fb-photos {
-	background-position-x: 30%;
-	background-image: url(../img/360-photos.jpg);
-}
 
 
 .facebook-360 {
-/* 	background-image: url(../img/fb360-mobile.png); */
-	background-size: 100% auto;
-	background-position: center top;
-	background-color: black;
+	background-position: 20%;
 }
 
-.facebook-spaces {
-	background-image: url(../img/fbspaces-mobile.png);
-	background-position: center 10%;
-	background-position-x: 10%;
+.fb-photos {
+	background-position: right;
 }
+
+.facebook-stories {
+	background-position: 20%;
+}
+
+.automatic {
+	
+}
+
+
 
 /* MOBILE > FOOTER */
 
