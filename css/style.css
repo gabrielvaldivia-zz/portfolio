@@ -22,7 +22,7 @@ body {
 	font-size: 12px;
 	padding: 8px 15px 8px 10px;
 	color: inherit;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(1, 1, 1, 0.1);
 	box-sizing: border-box;
 	font-family: 'Space Mono', monospace;
 	text-transform: uppercase;
@@ -33,6 +33,14 @@ body {
 
 .button:hover {
 	opacity: 1;
+	border: 1px solid rgba(1, 1, 1, 1);
+}
+
+#work .button {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#work .button:hover {
 	border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -47,6 +55,10 @@ body {
 	float: left;
 	padding: 4vw 4vw 16vw 4vw;
 	box-sizing: border-box;
+}
+
+.last {
+	padding: 4vw 4vw 4vw 4vw !important;
 }
 
 .section ul {
@@ -147,7 +159,7 @@ h3 {
 h4 {
 	font-family: 'Chivo';
 	font-weight: bolder;
-	font-size: calc(16px + .15vw);
+	font-size: calc(18px + .15vw);
 	margin: 0;
 }
 
@@ -275,65 +287,6 @@ a {
 }
 
 
-
-
-
-/*---- ESSAYS & TALKS ----*/
-
-/*
-#essays-talks {
-	padding-bottom: calc(40px + 4vw);
-	background-color: #f7f7f7;
-}
-
-#essays-talks h1 {
-	background-color: #f7f7f7;
-}
-
-
-#essays-talks h2 {
-	margin-left: -30px;
-}
-
-#essays-talks ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 4vw;
-}
-
-#essays-talks li {
-	position: relative;
-	padding: 2vw 2vw 6vw 2vw;	
-	list-style-type: none !important;
-	margin-right: 2vw;
-	margin-bottom: 4vw;
-	opacity: 0.7;
-	transition: opacity, background-color, box-shadow 0.2s ease-out;
-}
-
-#essays-talks li:hover {
-	opacity: 1;
-	background-color: white;
-	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
-}
-
-#essays-talks a {
-	text-decoration: none;
-}
-
-#essays-talks a:visited {
-	color: black;
-}
-
-#essays-talks li .button {
-	position: absolute;
-	bottom: 10%;
-}*/
-
-
-
 /*----- ESSAYS ----- */
 
 #essays {
@@ -389,7 +342,7 @@ a {
 
 /*----- TALKS ----- */
 
-.talks {
+/*.talks {
 	display: block;
 }
 
@@ -419,47 +372,68 @@ a {
 
 .talks ul > :last-child {
 	margin-right:0;
-}
+}*/
 
 /*----- SIDE PROJECTS ----- */
 
-.side-projects {
+.experiments {
 	display: block;
 }
 
-.side-projects, .side-projects h1 {
+.experiments, .experiments h1 {
 	background-color: #fff;		
 }
 
-.side-projects li {
+.experiments h4 {
+	margin-bottom: 10px;
+}
+
+.experiments li {
 	position: relative;
 
 	display: inline-block;
-	background-color: yellow;
 
 	padding: 0;
     list-style-type: none !important;
-    margin: 4vw 2vw 0vw 0vw;
+    margin: 3vw 2vw 3vw 0vw;
 
     box-sizing: border-box;
+/*    border: 1px solid #f3f3f3;*/
+    border-left: 6px solid white;
 
-    width: 20vw;
+    width: 40vw;
     min-width: 200px;
-    height: 30vw; 
-    min-height: 260px;
+    height: auto;
 }
 
-.side-projects ul > :first-child {
+.experiments li:hover {
+	border-left: 6px solid #f3f3f3;
+	/*background-color: #f3f3f3;*/
+	/*box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);*/
+}
+
+.experiments ul > :first-child {
 	margin-left:0;
 }
 
-.side-projects ul > :last-child {
+.experiments ul > :last-child {
 	margin-right:0;
 }
 
-.side-projects img {
+.experiments img {
 	width: 100%;
 	object-fit: cover;
+}
+
+.experiments .title {
+	background-color: transparent;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+/*	transform: rotate(-90deg);
+	transform-origin: top left;
+	margin-bottom: -7vw;
+	width: 26vw;*/
 }
 
 	
@@ -599,7 +573,7 @@ footer .left, footer .right {
 
 footer .left {
 	text-align: left;
-	margin-left: 5%;
+	margin-left: 4vw;
 	opacity: .7;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -738,7 +712,7 @@ footer .right p {
 
 /* DESKTOP > ESSAYS */
 
-#essays li, .side-projects li {
+#essays li {
 	width: 40vw;
 }
 	
@@ -785,7 +759,7 @@ li.project:nth-child(even) .description {
 }
 
 
-#essays li, .side-projects li {
+#essays li {
 	width: 19.5vw;
 }
 	
@@ -823,7 +797,12 @@ p {
 	font-weight: 300;
 }
 
-
+h1 {
+	position: relative;
+	background-color: none;
+	z-index: 2;
+	margin-top: 0;
+}
 
 h3 {
 	margin-top: 60px;
@@ -835,6 +814,10 @@ h4 {
 
 h6 {
 	font-size: 10px;
+}
+
+.gradient {
+	z-index: 1;
 }
 
 .section {
@@ -890,12 +873,30 @@ h6 {
 	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
 }
 
-#essays li:nth-child(even), .side-projects li:nth-child(even) {
+#essays li:nth-child(even) {
 	margin-right: 0;
 }
 
 .title {
 	padding: 4vw;
+}
+
+/* MOBILE > SIDE PROJECTS  */
+
+.experiments li {
+	width: 100%;
+	box-sizing: border-box;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	border-left: none;
+}
+
+.experiments li:hover {
+	border-left: none;
+}
+
+.experiments .title {
+	padding:0;
 }
 
 /* MOBILE > WORK */
