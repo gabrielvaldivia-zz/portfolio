@@ -786,6 +786,19 @@ li.project:nth-child(even) .description {
 	margin-right: 8px;
 }
 
+#work .button {
+	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.gradient {
+	z-index: 1;
+	top: 0;
+}
+
+.section {
+	padding-bottom: 40px;
+}
+
 /* MOBILE > TYPOGRAPHY */
 
 
@@ -802,6 +815,7 @@ h1 {
 	background-color: none;
 	z-index: 2;
 	margin-top: 0;
+	margin-bottom: 4px;
 }
 
 h3 {
@@ -814,14 +828,6 @@ h4 {
 
 h6 {
 	font-size: 10px;
-}
-
-.gradient {
-	z-index: 1;
-}
-
-.section {
-	padding-bottom: 80px;
 }
 
 
@@ -869,7 +875,7 @@ h6 {
 /* MOBILE > ESSAYS  */
 
 #essays li {
-	width: 42vw;
+	width: 40vw;
 	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
 }
 
