@@ -15,7 +15,11 @@ body {
 }
 
 
-/*---- HEADER ----*/
+/*
+========================================================== 
+	HEADER 
+========================================================== 
+*/
 
 .header {
 	position: fixed;
@@ -28,8 +32,8 @@ body {
 	box-sizing: border-box;
 	z-index: 999;
 	overflow: hidden;	
-    transform: rotate(-90deg);
-    transform-origin: top left;
+	transform: rotate(-90deg);
+	transform-origin: top left;
 	font-family: 'syneextra';
 }
 
@@ -39,28 +43,34 @@ body {
 
 .contact a {
 	display: inline-block;
-	font-size: 24px;
-	color: white;
 	float: right;  
-	font-size: calc(10px + .1vw);
-	letter-spacing: 1px;
-    opacity: .7;
+	
+	opacity: .7;
 	display: inline-block;
 	text-transform: uppercase;
-	color: white;
-	text-transform: uppercase;
-	margin-left: 20px;
-	margin-top: -25px;
+
+	margin-left: 10px;
+	margin-top: -28px;
 	padding: 10px;
+
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 3px;
+	color: white;
+}
+
+.contact a:hover {
+	opacity: 1;
 }
  
 .header a:hover {
-	 text-decoration: none;
+	text-decoration: none;
  }
  
 .header a:visited {
-	 color: white;
+	color: white;
  }
+ 
 
  .wrapper {
  	margin-left: 60px;
@@ -693,5 +703,19 @@ footer .right, footer .right p {
 .desktop-xl {
 	display: none;
 }
+
+/*
+========================================================== 
+	DESKTOP 
+========================================================== 
+*/
+
+
+@media only screen and (min-width: 721px)  {
+
+.mobile {
+	display: none;
+}
+
 
 }
