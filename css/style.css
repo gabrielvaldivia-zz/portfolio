@@ -79,7 +79,11 @@ ul, menu, dir {
 }
 
 
-/*---- TYPOGRAPHY ----*/
+/*
+========================================================== 
+	TYPOGRAPHY 
+========================================================== 
+*/
 
 @font-face {
 	font-family: 'synebold';
@@ -203,7 +207,11 @@ a {
 
 
 
-/*---- HEADER ----*/
+/*
+========================================================== 
+	HEADER 
+========================================================== 
+*/
 
 .header {
 	position: fixed;
@@ -227,19 +235,24 @@ a {
 
 .contact a {
 	display: inline-block;
-	font-size: 24px;
-	color: white;
 	float: right;  
-	font-size: calc(10px + .1vw);
-	letter-spacing: 1px;
+	
 	opacity: .7;
 	display: inline-block;
 	text-transform: uppercase;
-	color: white;
-	text-transform: uppercase;
-	margin-left: 20px;
-	margin-top: -25px;
+
+	margin-left: 10px;
+	margin-top: -28px;
 	padding: 10px;
+
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 3px;
+	color: white;
+}
+
+.contact a:hover {
+	opacity: 1;
 }
  
 .header a:hover {
@@ -254,7 +267,11 @@ a {
 
 
 
-/*---- INTRO ----*/
+/*
+========================================================== 
+	INTRO 
+========================================================== 
+*/
 
 .intro {
 	width: 100%;
@@ -287,7 +304,11 @@ a {
 }
 
 
-/*----- ESSAYS ----- */
+/*
+========================================================== 
+	ESSAYS 
+========================================================== 
+*/
 
 #essays {
 	display: block;
@@ -340,7 +361,11 @@ a {
 }
 
 
-/*----- TALKS ----- */
+/*
+========================================================== 
+	TALKS 
+========================================================== 
+*/
 
 /*.talks {
 	display: block;
@@ -376,7 +401,11 @@ a {
 
 	
 	
-/*---- WORK ----*/
+/*
+========================================================== 
+	WORK 
+========================================================== 
+*/
 
 
 
@@ -476,21 +505,25 @@ a {
 }
 
 
-/*----- EXPERIMENTS ----- */
+/*
+========================================================== 
+	EXPERIMENTS 
+========================================================== 
+*/
 
-.experiments {
+#experiments {
 	display: block;
 }
 
-.experiments, .experiments h1 {
+#experiments, #experiments h1 {
 	background-color: #fff;		
 }
 
-.experiments h4 {
+#experiments h4 {
 	margin-bottom: 10px;
 }
 
-.experiments li {
+#experiments li {
 	position: relative;
 
 	display: inline-block;
@@ -508,26 +541,26 @@ a {
     height: auto;
 }
 
-.experiments li:hover {
+#experiments li:hover {
 	border-left: 6px solid #f3f3f3;
 	/*background-color: #f3f3f3;*/
 	/*box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);*/
 }
 
-.experiments ul > :first-child {
+#experiments ul > :first-child {
 	margin-left:0;
 }
 
-.experiments ul > :last-child {
+#experiments ul > :last-child {
 	margin-right:0;
 }
 
-.experiments img {
+#experiments img {
 	width: 100%;
 	object-fit: cover;
 }
 
-.experiments .title {
+#experiments .title {
 	background-color: transparent;
 	position: relative;
 	padding-top: 0;
@@ -540,7 +573,11 @@ a {
 
 
 
-/*---- FOOTER ----*/
+/*
+========================================================== 
+	FOOTER 
+========================================================== 
+*/
 
 footer {
 	text-align: center;
@@ -555,7 +592,7 @@ footer p, footer a, footer a:visited {
 	padding: 0;
 	text-decoration: none;
 	color: black;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 footer a:hover {
@@ -576,7 +613,7 @@ footer .left {
 	margin-left: 4vw;
 	opacity: .7;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 footer .right, footer .right p {
@@ -591,7 +628,11 @@ footer .right p {
 
 
 
-/*---- MUSIC ----*/
+/*
+========================================================== 
+	MUSIC 
+========================================================== 
+*/
 
 
 .albums {
@@ -617,7 +658,11 @@ footer .right p {
 
 
 
-/*---- TIMELINE ----*/
+/*
+========================================================== 
+	TIMELINE 
+========================================================== 
+*/
 
 
 
@@ -686,7 +731,11 @@ footer .right p {
 
 
 
-/*-------- DESKTOP --------*/
+/*
+========================================================== 
+	DESKTOP 
+========================================================== 
+*/
 
 
 @media only screen and (min-width: 721px)  {
@@ -743,7 +792,11 @@ li.project:nth-child(even) .description {
 
 }
 
-/*-------- DESKTOP -XL -------*/
+/*
+========================================================== 
+	DESKTOP XL 
+========================================================== 
+*/
 
 @media only screen and (min-width: 960px)  {
 	
@@ -766,7 +819,11 @@ li.project:nth-child(even) .description {
 }
 
 
-/*-------- MOBILE --------*/
+/*
+========================================================== 
+	MOBILE 
+========================================================== 
+*/
 
 @media only screen and (max-width: 720px)  {
 
@@ -868,6 +925,16 @@ h6 {
 	padding: 8px 10px;
 	transform: rotate(0deg);
 }
+.contact {
+	position: absolute;
+	right: 0;
+	margin-top: -22px;	
+}
+
+
+.contact a {
+	float: none;
+}
 
 /* MOBILE > ESSAYS  */
 
@@ -948,7 +1015,7 @@ li.project:nth-child(even) .description {
 
 /* MOBILE > EXPERIMENTS  */
 
-.experiments li {
+#experiments li {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 0vw 0vw 32px 0;
@@ -956,16 +1023,16 @@ li.project:nth-child(even) .description {
 	border-bottom: 1px solid #f3f3f3;	
 }
 
-.experiments ul > :last-child {
+#experiments ul > :last-child {
 	border-bottom: none;
 	padding-bottom: 0;
 }
 
-.experiments li:hover {
+#experiments li:hover {
 	border-left: none;
 }
 
-.experiments .title {
+#experiments .title {
 	padding:0;
 }
 
