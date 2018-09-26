@@ -374,68 +374,6 @@ a {
 	margin-right:0;
 }*/
 
-/*----- SIDE PROJECTS ----- */
-
-.experiments {
-	display: block;
-}
-
-.experiments, .experiments h1 {
-	background-color: #fff;		
-}
-
-.experiments h4 {
-	margin-bottom: 10px;
-}
-
-.experiments li {
-	position: relative;
-
-	display: inline-block;
-
-	padding: 0;
-    list-style-type: none !important;
-    margin: 3vw 2vw 3vw 0vw;
-
-    box-sizing: border-box;
-/*    border: 1px solid #f3f3f3;*/
-    border-left: 6px solid white;
-
-    width: 40vw;
-    min-width: 200px;
-    height: auto;
-}
-
-.experiments li:hover {
-	border-left: 6px solid #f3f3f3;
-	/*background-color: #f3f3f3;*/
-	/*box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);*/
-}
-
-.experiments ul > :first-child {
-	margin-left:0;
-}
-
-.experiments ul > :last-child {
-	margin-right:0;
-}
-
-.experiments img {
-	width: 100%;
-	object-fit: cover;
-}
-
-.experiments .title {
-	background-color: transparent;
-	position: relative;
-	padding-top: 0;
-	padding-bottom: 0;
-/*	transform: rotate(-90deg);
-	transform-origin: top left;
-	margin-bottom: -7vw;
-	width: 26vw;*/
-}
-
 	
 	
 /*---- WORK ----*/
@@ -520,8 +458,6 @@ a {
 	z-index: 1;
 }
 
-
-
 .facebook-360 {
 	background-image: url(../img/facebook-360.jpg);
 }
@@ -538,6 +474,70 @@ a {
 .automatic {
 	background-image: url(../img/automatic.jpg);
 }
+
+
+/*----- EXPERIMENTS ----- */
+
+.experiments {
+	display: block;
+}
+
+.experiments, .experiments h1 {
+	background-color: #fff;		
+}
+
+.experiments h4 {
+	margin-bottom: 10px;
+}
+
+.experiments li {
+	position: relative;
+
+	display: inline-block;
+
+	padding: 0;
+    list-style-type: none !important;
+    margin: 3vw 2vw 3vw 0vw;
+
+    box-sizing: border-box;
+/*    border: 1px solid #f3f3f3;*/
+    border-left: 6px solid white;
+
+    width: 40vw;
+    min-width: 200px;
+    height: auto;
+}
+
+.experiments li:hover {
+	border-left: 6px solid #f3f3f3;
+	/*background-color: #f3f3f3;*/
+	/*box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);*/
+}
+
+.experiments ul > :first-child {
+	margin-left:0;
+}
+
+.experiments ul > :last-child {
+	margin-right:0;
+}
+
+.experiments img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.experiments .title {
+	background-color: transparent;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+/*	transform: rotate(-90deg);
+	transform-origin: top left;
+	margin-bottom: -7vw;
+	width: 26vw;*/
+}
+
 
 
 /*---- FOOTER ----*/
@@ -881,24 +881,6 @@ h6 {
 	padding: 4vw;
 }
 
-/* MOBILE > SIDE PROJECTS  */
-
-.experiments li {
-	width: 100%;
-	box-sizing: border-box;
-	padding-bottom: 2vw;
-	padding-top: 2vw;
-	border-left: none;
-}
-
-.experiments li:hover {
-	border-left: none;
-}
-
-.experiments .title {
-	padding:0;
-}
-
 /* MOBILE > WORK */
 
 
@@ -936,12 +918,9 @@ li.project:nth-child(even) .description {
 }
 
 
-
 .video {
 	display: none;
 }
-
-
 
 
 .facebook-360 {
@@ -958,6 +937,24 @@ li.project:nth-child(even) .description {
 
 .automatic {
 	
+}
+
+/* MOBILE > EXPERIMENTS  */
+
+.experiments li {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0vw 0vw 32px 0;
+	border-left: none;
+	border-bottom: 1px solid #f3f3f3;	
+}
+
+.experiments li:hover {
+	border-left: none;
+}
+
+.experiments .title {
+	padding:0;
 }
 
 
