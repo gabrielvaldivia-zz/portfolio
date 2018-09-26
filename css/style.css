@@ -869,9 +869,6 @@ h6 {
 	transform: rotate(0deg);
 }
 
-
-
-
 /* MOBILE > ESSAYS  */
 
 #essays li {
@@ -892,6 +889,10 @@ h6 {
 
 .gradient {
 	margin-top: 20px;
+}
+
+#work h1 {
+	padding-top: 30px;
 }
 
 .project {
