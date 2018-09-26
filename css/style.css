@@ -949,6 +949,11 @@ li.project:nth-child(even) .description {
 	border-bottom: 1px solid #f3f3f3;	
 }
 
+.experiments ul > :last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
 .experiments li:hover {
 	border-left: none;
 }
