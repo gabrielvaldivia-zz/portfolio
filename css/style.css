@@ -801,7 +801,7 @@ li.project:nth-child(even) .description {
 @media only screen and (min-width: 960px)  {
 	
 .intro {
-	background-image: url(../img/profile2.jpg);
+	background-image: url(../img/profile.jpg);
 	background-size: 90vh auto;
 	background-repeat: no-repeat;
 	background-position: 42vw 0vw;
@@ -903,7 +903,7 @@ h6 {
 /* 	display: none; */
 	height: 400px;
 	position: absolute;
-	background-image: url(../img/profile.jpg);
+	background-image: url(../img/profile-mobile.jpg);
 	background-size: cover;
 	background-position: center center; 
 }
