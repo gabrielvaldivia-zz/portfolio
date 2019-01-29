@@ -119,7 +119,7 @@
 					<div class="dog-ear"><p>READ ESSAY →</p><div class="flip-top"></div><div class="flip-bottom"></div></div>
 				</li>
 
-				<div id="more-essays">
+				<div id="more-essays" style="display: none;">
 
 					<li style="background-color: #2E3532;">
 						<a target="_blank" href="https://uxdesign.cc/diversity-is-punk-rock-6f7536c699c0?source=your_stories_page---------------------------">
@@ -152,10 +152,9 @@
 						</a>
 						<div class="dog-ear"><p>READ ESSAY →</p><div class="flip-top"></div><div class="flip-bottom"></div></div>			
 					</li>
-				</div>
-				
-				<button id="show-more"  onclick="myFunction()">Show more</button>							
+				</div>						
 			</ul>
+			<button id="show-more" class="button" onclick="expand()">Show more   ↓</button>				
 		</div>
 		
 		<div id="work" class="section">
@@ -291,14 +290,14 @@
 	<!-- SHOW MORE ESSAYS -->
 
 	<script type="text/javascript">
-		function myFunction() {
+		function expand() {
 		  var x = document.getElementById("more-essays");
 		  if (x.style.display == "none") {
 			x.style.display = "block";
-			document.getElementById("show-more").innerHTML = "Show less";
+			document.getElementById("show-more").innerHTML = "Show less   ↑";
 		  } else {
 		    x.style.display = "none";
-		    document.getElementById("show-more").innerHTML = "Show more";
+		    document.getElementById("show-more").innerHTML = "Show more   ↓";
 		  }
 
 		}

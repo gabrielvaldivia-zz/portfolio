@@ -55,6 +55,7 @@ body {
 	float: left;
 	padding: 4vw 4vw 16vw 4vw;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .last {
@@ -312,6 +313,9 @@ a {
 
 #essays {
 	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
 }
 
 #essays, #essays h1 {
@@ -338,6 +342,7 @@ a {
 	position: relative;
 	box-sizing: border-box;
 	padding:2vw 2vw 2vw 2vw;
+	text-align: left;
 }
 
 #essays a {
@@ -432,14 +437,15 @@ a {
 }
 
 #show-more {
-	margin: 0 auto;
+	margin: 2vw auto 0 auto;
+
 }
 
+#essays .button:after {
+	position: relative;
+	content: '';
 
-#more-essays {
-	display: none;
 }
-
 	
 	
 /*
