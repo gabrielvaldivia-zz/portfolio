@@ -362,14 +362,6 @@ a {
 	margin-right:0;
 }
 
-/*.title {
-	position: absolute;
-	top: 0;
-	padding: 2vw;
-	background-color: #fff;
-	box-sizing: border-box;
-	width: 100%;
-}*/
 
 #essays h2 {
 	text-transform: uppercase;
@@ -382,8 +374,7 @@ a {
 	color: white;
 	font-weight: normal;
 	border-top: 3px white solid;
-/*	border-bottom: 3px white solid;
-*/}
+}
 
 #essays h6 {
 	color:white;
