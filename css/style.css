@@ -318,18 +318,34 @@ a {
 	background-color: #f7f7f7;		
 }
 
+#essays ul {
+	margin-top: 2vw;
+}
+
 #essays li {
 	display: inline-block;
+	float: left;
+	position: relative;
 	background-color: gray;
 	padding: 0;
     list-style-type: none !important;
-    margin: 4vw 2vw 0vw 0vw;
+    margin: 2vw 2vw 0vw 0vw;
     box-sizing: border-box;
     min-width: 175px;
     height: 30vw; 
     min-height: 260px;
 	position: relative;
+/*	border: 10px solid white;
+*/	box-sizing: border-box;
+	padding:2vw 2vw 2vw 2vw;
 }
+
+#essays a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 
 #essays li img {
 	width: 100%;
@@ -346,19 +362,83 @@ a {
 	margin-right:0;
 }
 
-.title {
+/*.title {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	padding: 2vw;
 	background-color: #fff;
 	box-sizing: border-box;
 	width: 100%;
+}*/
+
+#essays h2 {
+	text-transform: uppercase;
+	font-family: 'Six Caps', sans-serif;
+	font-size: calc(32px + 2.5vw);
+	line-height: 5vw;
+	display: block;
+	margin: 1vw 0;
+	padding: 2vw 0;
+	color: white;
+	font-weight: normal;
+	border-top: 3px white solid;
+/*	border-bottom: 3px white solid;
+*/}
+
+#essays h6 {
+	color:white;
+	opacity: 1;
+	box-sizing: border-box;
+	font-weight: bold;
 }
 
-#essays li:hover {
+.dog-ear {
+	visibility: hidden;	
+}
+
+.dog-ear p {
+	color: white;
+	font-family: 'Space Mono', monospace;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: -4px;
+}
+
+.flip-top {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.15);
+
+}
+
+.flip-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 40px 40px;
+	border-color: transparent transparent #F7F7F7 transparent;
+}
+
+#essays a:hover + .dog-ear {
+	visibility: visible;
+}
+
+/*#essays li:hover {
 	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
 	margin-top: 3vw;
 }
+*/
+
 
 
 /*
@@ -762,7 +842,13 @@ footer .right p {
 /* DESKTOP > ESSAYS */
 
 #essays li {
-	width: 40vw;
+	width: calc(40px + 15vw);
+	height: calc(60px + 24vw);
+}
+
+#essays h2 {
+	font-size: calc(30px + 2.2vw);
+	line-height: calc(32px + 2.4vw);
 }
 	
 
@@ -814,6 +900,9 @@ li.project:nth-child(even) .description {
 
 #essays li {
 	width: 19.5vw;
+/*	height: 22vw;
+	padding: 1vw;
+	margin-right: 1vw;*/
 }
 	
 }
@@ -900,7 +989,6 @@ h6 {
 }
 
 .intro .right {
-/* 	display: none; */
 	height: 400px;
 	position: absolute;
 	background-image: url(../img/intro-mobile.jpg);
@@ -941,15 +1029,16 @@ h6 {
 #essays li {
 	width: 43vw;
 	min-width: 0;
-	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
-}
+/*	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.05);
+*/}
 
 #essays li:nth-child(even) {
 	margin-right: 0;
 }
 
-.title {
-	padding: 4vw;
+#essays h2 {
+/*	font-size: calc(30px + 2.2vw);*/
+	line-height: calc(40px + 1.4vw);
 }
 
 /* MOBILE > WORK */
