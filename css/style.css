@@ -1034,6 +1034,10 @@ h6 {
 	line-height: calc(40px + 1.4vw);
 }
 
+.dog-ear p {
+	display: none;
+}
+
 /* MOBILE > WORK */
 
 
