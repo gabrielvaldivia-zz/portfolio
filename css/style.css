@@ -441,6 +441,8 @@ a {
 
 }
 
+button:focus {outline:0;}
+
 #essays .button:after {
 	position: relative;
 	content: '';
