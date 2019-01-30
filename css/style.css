@@ -614,6 +614,7 @@ button:focus {outline:0;}
 	position: relative;
 	padding-top: 0;
 	padding-bottom: 0;
+	padding-left: 20px;
 /*	transform: rotate(-90deg);
 	transform-origin: top left;
 	margin-bottom: -7vw;
@@ -843,6 +844,9 @@ li.project:nth-child(even) .description {
 	left: 4vw;
 	right: auto;
 }​
+
+
+
 
 
 }
