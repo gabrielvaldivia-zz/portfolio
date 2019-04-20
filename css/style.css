@@ -538,8 +538,6 @@ button:focus {outline:0;}
 }
 
 
-
-
 .description {
 	width: 50vw;
 	max-width: 500px;
@@ -873,7 +871,7 @@ h1 {
 	z-index: 2;
 	margin-top: 0;
 	margin-bottom: 4px;
-	font-size: 34px;
+	font-size: 28px;
 	line-height: 36px;
 }
 
