@@ -215,6 +215,10 @@ a {
 	color: black;
 }
 
+.syne {
+	font-family: syneitalic;
+}
+
 
 
 /*
@@ -228,13 +232,14 @@ a {
 	padding: 15px 20px;
 	margin: 0;
 	box-sizing: border-box;
-	z-index: 999;
+/*	z-index: 999;*/
 	overflow: hidden;	
 	font-family: 'youngserif';
 	font-weight: 900;
 	display: inline-block;
-	background-color: black;
+/*	background-color: black;*/
 	color: white;
+	position: fixed;
 }
 
 .logo {
@@ -288,16 +293,26 @@ a {
 
 /*
 ========================================================== 
-	INTRO 
+	HERO 
 ========================================================== 
 */
 
-.intro {
+.hero {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 15vw 15vw 20vw 15vw;
-	background-color: black;
+
+	background-color: #1f222b;
 	color: white;
+
+	background-image: url(../img/bg11.jpg);
+	background-size: 100% auto;
+	background-position: center -35vh;
+	background-repeat: no-repeat;
+	background-blend-mode: lighten;
+}
+
+.intro {
+	padding: 45vw 15vw 15vw 15vw;
 }
 
 .intro a:hover {
@@ -306,18 +321,35 @@ a {
 
 .intro h1 {
 	position: relative;
+	font-size: calc(20px + 3vw);
+	line-height: calc(24px + 3.1vw);
+	padding: 0vw 0vw 2vw 4vw;
 }
 
 .intro p {
-	font-size: calc(16px + 1.5vw);
-	line-height: 3vw;
+	font-size: calc(14px + 1vw);
+	line-height: calc(16px + 1.6vw);
+
 	display: block;
-	margin: 10px 0 40px 0;
+	margin: 10px 0 36px 0;
 	padding: 0;
 	font-family: 'Karla';
 	font-weight: 500;
-	text-align: justify;
+/*	text-align: justify;*/
 	letter-spacing: -1px;	
+}
+
+.column {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+	box-sizing: border-box;
+}
+
+.intro:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -888,17 +920,27 @@ h6 {
 }
 
 
-/* MOBILE > INTRO */
+/* MOBILE > HERO */
 
-.intro {
+.hero {
 	padding: 8vw 4vw;
 	margin: 0 auto;
+	background-image: none;
 }
 
-.intro p {
+.hero p {
 	line-height: calc(24px + 1vw);
 	text-align: left;
 	margin-bottom: 20px;
+}
+
+.intro {
+	padding: 0;
+}
+
+.column {
+	width: 100%;
+	margin-right: 0;
 }
 
 
