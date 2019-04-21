@@ -15,6 +15,7 @@ body {
 }
 
 
+
 /*
 ========================================================== 
 	HEADER 
@@ -22,59 +23,67 @@ body {
 */
 
 .header {
-	position: fixed;
-	margin-top: 100vh;
-	background-color: #343434;
-	width: 100vh;
-	min-width: 600px;
-	height: 60px;
+	width: 100vw;
 	padding: 15px 20px;
+	margin: 0;
 	box-sizing: border-box;
-	z-index: 999;
+	z-index: 2;
 	overflow: hidden;	
-	transform: rotate(-90deg);
-	transform-origin: top left;
-	font-family: 'syneextra';
-}
-
-.header a {
-	font-size: 20px;
-}
-
-.contact a {
+	font-family: 'youngserif';
+	font-weight: 900;
 	display: inline-block;
-	float: right;  
-	
-	opacity: .7;
+	color: white;
+	position: fixed;
+}
+
+.logo {
+ 	display: inline-block;
+ 	font-size: 24px;
+ 	text-align: center;
+ 	line-height: 0;
+ 	padding-top: 18px;
+ 	box-sizing: border-box;
+ }
+ 
+ .logo a {
+ 	color: black;
+ 	opacity: 1;
+ }
+
+ .logo a:hover {
+ 	text-decoration: none;
+ }
+
+.contact {
+	display: inline-block;
+	float: right;
+}
+
+
+.contact a {	
+	opacity: .5;
+	font-size: 20px;
 	display: inline-block;
 	text-transform: uppercase;
 
 	margin-left: 10px;
-	margin-top: -28px;
 	padding: 10px;
 
 	font-family: 'Space Mono', monospace;
 	font-size: 11px;
 	letter-spacing: 3px;
-	color: white;
+	color: black;
 }
 
 .contact a:hover {
 	opacity: 1;
+	text-decoration: none;
 }
  
-.header a:hover {
-	text-decoration: none;
- }
- 
-.header a:visited {
+.contact a:visited {
 	color: white;
  }
- 
 
-/* .wrapper {
- 	margin-left: 60px;
- }*/
  
 /*---- TYPOGRAPHY ----*/
 
@@ -308,7 +317,11 @@ img {
 	margin-left: -20px;
 }
 
-/*---- FOOTER ----*/
+/*
+========================================================== 
+	FOOTER 
+========================================================== 
+*/
 
 footer {
 	text-align: center;
@@ -323,36 +336,44 @@ footer p, footer a, footer a:visited {
 	padding: 0;
 	text-decoration: none;
 	color: black;
-	font-size: 12px !important;
+	font-size: 11px;
+	opacity: .5;
 }
 
 footer a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	opacity: 1;
 }
 
-footer .left, .right {
+footer .left, footer .right {
 	float: left;
 	width: 45%;
 	box-sizing: border-box;
 	border-top: 2px #f1f1f1 solid; 
 	padding: 30px 0;
+	font-family: 'Space Mono';
 }
 
 
 footer .left {
 	text-align: left;
-	margin-left: 5%;
-	opacity: .7;
+	margin-left: 4vw;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+}
+
+footer .left p {
+	letter-spacing: 1px !important;
 }
 
 footer .right, footer .right p {
 	text-align: right;
 	font-family: 'syneitalic';
-	font-size: 16px !important;
+	font-size: 16px;
 }
 
+footer .right p {
+	opacity: .4;
+}
 
 .mps-outro .footer {
 	font-size: 14px;
