@@ -232,35 +232,38 @@ a {
 	padding: 15px 20px;
 	margin: 0;
 	box-sizing: border-box;
-/*	z-index: 999;*/
 	overflow: hidden;	
 	font-family: 'youngserif';
 	font-weight: 900;
 	display: inline-block;
-/*	background-color: black;*/
+}
+
+.hero .header {
+	position: fixed;	
 	color: white;
-	position: fixed;
 }
 
 .logo {
  	display: inline-block;
-/* 	width: 44px;
- 	height: 44px;
- 	border-radius: 50%;*/
  	font-size: 24px;
  	text-align: center;
  	line-height: 0;
  	padding-top: 18px;
  	box-sizing: border-box;
-/* 	border: 1px solid white;*/
  }
- .logo a {
+ 
+ .hero .logo a {
  	color: white;
+ }
+
+ .logo a {
+ 	color: black;
  }
 
 .contact {
 	display: inline-block;
 	float: right;
+	color: black;
 }
 
 
@@ -276,7 +279,7 @@ a {
 	font-family: 'Space Mono', monospace;
 	font-size: 11px;
 	letter-spacing: 3px;
-	color: white;
+	color: black;
 }
 
 .contact a:hover {
@@ -284,7 +287,7 @@ a {
 	text-decoration: none;
 }
  
-.contact a:visited {
+.hero .contact a, .hero .contact a:visited {
 	color: white;
  }
 
@@ -800,6 +803,7 @@ footer .right p {
 	margin: 0;
 	position: relative;
 	list-style-type: none;
+	margin-top: -14px;
 	margin-bottom: -6px;
 	display: block;
 	width: 100%;
@@ -809,16 +813,20 @@ footer .right p {
 	width: 100px;
 	float: left;
 	margin-left: -38px;
+	margin-top: -5px;
 	padding: 15px 20px 4px 0;
 	text-align: right;
-	font-family: 'synebold';
+	font-family: 'Karla';
+	font-weight: bold;
+	font-size: 20px;
 }
 .timeline-content {
 	border-left: 2px #ccc solid;
 	padding-left: 20px;
 	word-wrap: break-word;
 	display: block;
-	padding: 20px 20px 0px 20px;
+	padding: 0px 20px 10px 20px;
+	margin-top: 20px;
 	float:left;
 	width: 80%;
 }
@@ -831,15 +839,16 @@ footer .right p {
  	border: 2px solid #ccc;
 	background: white;
 	left: 77px;
-	top: 24px;
+	top: 20px;
 	border-radius: 100%;
 }
 
 .timeline p {}
 
 .timeline-content p {
-	margin: 0;
+	margin-top: -10px;
 	padding: 0 0 10px 0;
+	font-size: 20px;
 }
 
 .timeline-content p a {
@@ -1097,19 +1106,23 @@ footer .left {
 }
 
 .timeline-date {
-	width: 50px;
-	margin: 14px 0 0 0;
+	width: 100px;
 	float: left;
-	padding: 5px 20px 4px 0;
+	margin-left: -38px;
+	margin-top: -5px;
+	padding: 15px 20px 4px 0;
 	text-align: right;
-	font-family: 'synebold';
+	font-family: 'Karla';
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .timeline-content {
 	border-left: 2px #ccc solid;
 	padding-left: 20px;
+	padding-top: 10px;
 	float:none;
-	margin-left:70px;
+	margin-left: 80px;
 	width: auto;
 }
 
@@ -1120,9 +1133,16 @@ footer .left {
 	height: 8px;
 	border: 2px solid #ccc;
 	background: white;
-	left: 65px;
-	top: 24px;
+	left: 75px;
+	top: 16px;
 	border-radius: 100%;
+}
+
+.timeline-content p {
+	margin-top: -20px;
+	padding: 0 0 20px 0;
+	font-size: 20px;
+	line-height: 28px;
 }
 
 /*MOBILE > MUSIC*/
