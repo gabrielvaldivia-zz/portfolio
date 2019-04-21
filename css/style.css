@@ -911,6 +911,12 @@ h1 {
 	line-height: calc(32px + 2.5vw);
 }
 
+h2 {
+	font-size: calc(24px + 1.5vw);
+	line-height: 2.5vw;
+	font-weight: bold;
+}
+
 h3 {
 	margin-top: 60px;
 }
