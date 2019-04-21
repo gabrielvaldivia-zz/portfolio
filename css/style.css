@@ -907,8 +907,8 @@ h1 {
 	z-index: 2;
 	margin-top: 0;
 	margin-bottom: 4px;
-	font-size: 28px;
-	line-height: 32px;
+	font-size: calc(28px + 2vw);
+	line-height: calc(32px + 2.5vw);
 }
 
 h3 {
