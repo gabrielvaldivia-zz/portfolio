@@ -326,8 +326,8 @@ a {
 }
 
 .intro p {
-	font-size: calc(18px + 1vw);
-	line-height: calc(20px + 1.4vw);
+/*	font-size: calc(16px + 0.8vw);*/
+    line-height: calc(18px + 1.2vw);
 
 	display: block;
 	margin: 10px 0 36px 0;
@@ -343,6 +343,7 @@ a {
 	width: 48%;
 	margin-right: 4%;
 	box-sizing: border-box;
+/*	text-align: justify;*/
 }
 
 .intro:after {
