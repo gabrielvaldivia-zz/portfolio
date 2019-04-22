@@ -360,8 +360,7 @@ a {
 
 #essays {
 	display: block;
-	position: flex;
-	width: 100%;
+/*	width: 100%;*/
 	text-align: center;
 }
 
@@ -371,7 +370,10 @@ a {
 
 #essays ul {
 	margin-top: 2vw;
-	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 #essays li {
@@ -385,11 +387,11 @@ a {
     list-style-type: none !important;
     
     padding: 0;
+/*    flex-grow: 1;*/
+/*    margin: auto;*/
     margin: 2vw 2vw 0vw 0vw;
-   
     
-    
-    width: 20vw;
+    width: 21vw;
 	height: 30vw;
 	min-width: 175px;
     min-height: 260px;
@@ -400,6 +402,8 @@ a {
 	padding:2vw 2vw 2vw 2vw;
 	text-align: left;
 }
+
+#essays 
 
 #essays a {
 	display: block;
@@ -498,6 +502,7 @@ a {
 #show-more {
 	margin: 0 auto;
 	margin-top: 4vw;
+	margin-left: -2vw;
 
 
 }
@@ -569,7 +574,7 @@ button:focus {outline:0;}
 
 
 .description {
-	width: 50vw;
+	width: 35vw;
 	max-width: 500px;
 	position: absolute;
 	right: 4vw;
@@ -1028,11 +1033,6 @@ li.project .description {
 	top: auto;
 }​
 
-
-.facebook-360 {
-	background-position: 20% !important;
-}
-
 .fb-photos {
 	background-position: right;
 }
@@ -1041,9 +1041,11 @@ li.project .description {
 	background-position: 20%;
 }
 
-.automatic {
-	
+.facebook-360 {
+	background-position: 20%;
 }
+
+.automatic {}
 
 /* MOBILE > EXPERIMENTS  */
 
