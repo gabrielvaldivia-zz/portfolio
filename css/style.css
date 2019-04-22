@@ -19,7 +19,7 @@ body {
 	margin-right: 10px;
 	margin-top: 10px;
 	font-size: 12px;
-	padding: 8px 15px 8px 10px;
+	padding: 8px 15px;
 	color: inherit;
 	border: 1px solid rgba(1, 1, 1, 0.1);
 	box-sizing: border-box;
@@ -679,7 +679,7 @@ li.project:nth-child(even) .description {
 	background-color: transparent;
 	position: relative;
 	padding-top: 0;
-	padding-bottom: 0;
+	padding-bottom: 14px;
 	padding-left: 20px;
 /*	transform: rotate(-90deg);
 	transform-origin: top left;
