@@ -963,6 +963,10 @@ h6 {
 	line-height: calc(18px + 3vw);
 }
 
+.intro p {
+	line-height: inherit;
+}
+
 .column {
 	width: 100%;
 	margin-right: 0;
