@@ -1,84 +1,73 @@
 body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Karla', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-style: normal;
-	min-height: 600px;
-	color: black;
+	padding:0;
+	margin:0;
+	font-family:'Karla',sans-serif;
+	font-style:normal;
+	min-height:600px;
+	color:#000;
 }
 
 .wrapper {
-	margin: -4px auto;
-	min-height: 600px;
+	margin:-4px auto;
+	min-height:600px;
 }
 
 .button {
-	display: inline-block;
-	margin-right: 10px;
-	margin-top: 10px;
-	font-size: 12px;
-	padding: 8px 15px;
-	color: inherit;
-	border: 1px solid rgba(1, 1, 1, 0.1);
-	box-sizing: border-box;
-	font-family: 'Space Mono', monospace;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 1px;
-	opacity: 1;
+	display:inline-block;
+	margin-right:10px;
+	margin-top:10px;
+	font-size:12px;
+	padding:8px 15px;
+	color:inherit;
+	border:1px solid rgba(1,1,1,0.1);
+	box-sizing:border-box;
+	font-family:'Space Mono',monospace;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:1px;
+	opacity:1;
 }
 
 .button:hover {
-	opacity: 1;
-	border: 1px solid rgba(1, 1, 1, 1);
+	opacity:1;
+	border:1px solid rgba(1,1,1,1);
 }
 
 #work .button {
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border:1px solid rgba(255,255,255,0.1);
 }
 
 #work .button:hover {
-	border: 1px solid rgba(255, 255, 255, 1);
+	border:1px solid rgba(255,255,255,1);
 }
 
 .button:after {
-	position: relative;
-	content: '   →';
-
+	position:relative;
+	content:'   →';
 }
 
 .section {
-	width: 100%;
-	float: left;
-	padding: 4vw 4vw 16vw 4vw;
-	box-sizing: border-box;
-	position: relative;
+	width:100%;
+	float:left;
+	padding:4vw 4vw 16vw;
+	box-sizing:border-box;
+	position:relative;
 }
 
 .last {
-	padding: 4vw 4vw 4vw 4vw !important;
+	padding:4vw!important;
 }
 
 .section ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+	list-style-type:none;
+	padding:0;
+	margin:0;
 }
 
-
-ul, menu, dir {
-	display: block;
-	list-style-type: disc;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	-webkit-padding-start: 40px;
+ul,menu,dir {
+	display:block;
+	list-style-type:disc;
 }
-
-
 /*
 ========================================================== 
 	TYPOGRAPHY 
@@ -136,85 +125,77 @@ ul, menu, dir {
 
 
 h1 {
-	font-size: calc(34px + 3vw);
-	line-height: calc(40px + 3vw);
-	padding: 2vw 4vw;
-	margin-left: -4vw;
-	font-family: 'youngserif';
-	font-weight: bolder;
-	text-align: left !important;
-	position: absolute;
-	margin-top: calc(-30px - 6vw);
+	font-size:calc(34px + 3vw);
+	line-height:calc(40px + 3vw);
+	padding:2vw 4vw;
+	margin-left:-4vw;
+	font-family:'youngserif';
+	font-weight:bolder;
+	text-align:left!important;
+	position:absolute;
+	margin-top:calc(-30px - 6vw);
 }
 
 h2 {
-	font-size: calc(16px + 1.5vw);
-	line-height: 2.5vw;
-	display: block;
-	margin: 10px 0 20px 0;
-	padding: 0;
-	font-family: 'Karla';
-	font-weight: 900;
+	font-family:'Karla';
+	font-weight:900;
+	font-size:calc(16px + 1.5vw);
+	line-height:2.5vw;
+	display:block;
+	margin:10px 0 20px;
+	padding:0;
 }
 
-
 h3 {
-	font-size: calc(16px + 1.6vw);
-	line-height: calc(20px + 1.8vw);
-	color: #343434;
-	margin-top: -20px;
-	margin-bottom: 20px;
-	padding: 0;
-	font-family: 'Karla';
-	font-weight: 100;
+	font-family:'Karla';
+	font-weight:100;
+	font-size:calc(16px + 1.6vw);
+	line-height:calc(20px + 1.8vw);
+	color:#343434;
+	margin-top:-20px;
+	margin-bottom:20px;
+	padding:0;
 }
 
 h4 {
-	font-family: 'Karla';
-	font-weight: bolder;
-	font-size: calc(18px + .15vw);
-	margin: 0;
+	font-family:'Karla';
+	font-weight:bolder;
+	font-size:calc(18px + .15vw);
+	margin:0;
 }
-
 
 h5 {
-	margin: 0;	
-	font-family: 'Karla';
-	font-weight: bolder;
-	font-size: calc(12px + .3vw);
-	font-weight: 300;
-	opacity: .7;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-	
-	
-h6 {
-	font-family: 'Space Mono', monospace;
-	margin: 0;
-	opacity: .7;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 300;
-	font-size: 12px;
-	padding-bottom: 5px;
+	font-family:'Karla';
+	font-weight:bolder;
+	font-size:calc(12px + .3vw);
+	opacity:.7;
+	margin:0;
 }
 
+h6 {
+	font-family:'Space Mono',monospace;
+	font-weight:300;
+	font-size:12px;
+	margin:0;
+	opacity:.7;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	padding-bottom:5px;
+}
 
 p {
-	padding: 0;
-	margin: 0 0 10px 0;
-	font-size: 24px;
-	line-height: 28px;
-	opacity: .7;    
-	letter-spacing: -.6px;
+	padding:0;
+	margin:0 0 10px;
+	font-size:24px;
+	line-height:28px;
+	opacity:.7;
+	letter-spacing:-.6px;
 }
 
 a {
-	text-decoration: none;
-	color: black;
+	text-decoration:none;
+	color:#000;
 }
-
 
 
 /*
@@ -334,7 +315,6 @@ a {
 	padding: 0;
 	font-family: 'Karla';
 	font-weight: 500;
-/*	text-align: justify;*/
 	letter-spacing: -1px;	
 }
 
@@ -343,7 +323,6 @@ a {
 	width: 48%;
 	margin-right: 4%;
 	box-sizing: border-box;
-/*	text-align: justify;*/
 }
 
 .intro:after {
@@ -361,7 +340,6 @@ a {
 
 #essays {
 	display: block;
-/*	width: 100%;*/
 	text-align: center;
 }
 
@@ -554,7 +532,6 @@ button:focus {outline:0;}
 	min-height: 200px;
 	width: 100%;
 	z-index: 1;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f1f1f+0,1f1f1f+50,1f1f1f+100&1+0,1+50,0+100 */
 	background: -moz-linear-gradient(top, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 50%, rgba(31,31,31,0) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(31,31,31,1) 0%,rgba(31,31,31,1) 50%,rgba(31,31,31,0) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(31,31,31,1) 0%,rgba(31,31,31,1) 50%,rgba(31,31,31,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -573,7 +550,6 @@ button:focus {outline:0;}
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-
 }
 
 
