@@ -152,16 +152,16 @@
 					<p>Use the controllers to point in a direction and press a button to teleport to it.</p>
 				</div>
 
-				<img class="grid_4 prefix_2 margin-bottom" style="height: 160px" src="img/teleport-irl.gif">
-				<img class="grid_4 suffix_2 margin-bottom" style="height: 160px" src="img/teleport-vr.gif">
+				<img class="grid_5 prefix_1 margin-bottom" style="height: 200px" src="img/teleport-irl.gif">
+				<img class="grid_5 suffix_1 margin-bottom" style="height: 200px" src="img/teleport-vr.gif">
 
 				<div class="grid_8 prefix_2 suffix_2 margin-top">
 					<h5>Ambulation</h5>
 					<p>Move both controllers at the sides of their body, as if walking in place.</p>
 				</div>
 
-				<img class="grid_4 prefix_2 margin-bottom" style="height: 160px" src="img/locomotion-irl.gif">
-				<img class="grid_4 suffix_2 margin-bottom" style="height: 160px" src="img/locomotion-vr.gif">
+				<img class="grid_5 prefix_1 margin-bottom" style="height: 200px" src="img/locomotion-irl.gif">
+				<img class="grid_5 suffix_1 margin-bottom" style="height: 200px" src="img/locomotion-vr.gif">
 
 				
 				<div class="grid_8 prefix_2 suffix_2 margin-top">		
@@ -177,7 +177,9 @@
 					<p>Another challenge introduced by natural movement was aligning the virtual and physical environments with each other. This meant that we needed to somehow calibrate the physical environment with the virtual one. </p>
 				</div>
 
-				<img class="grid_10 prefix_1 suffix_1 margin-bottom" src="img/walkable.gif">
+				<img class="grid_10 prefix_1 suffix_1" src="img/walkable.gif">
+				<p class="grid_8 prefix_2 suffix_2 caption">Walkable area overlayed over six virtual environments</p>
+
 
 				<div class="grid_8 prefix_2 suffix_2">	
 					<p>To achieve calibration, we used a location in the physical space as the Start Area for the virtual experience. This enabled the system to have a consistent reference point to understand where the user is located in relation to the virtual and physical objects. </p>
@@ -193,28 +195,24 @@
 						<p>In order to keep the walkable area within the size of the average available space in a police department, we decided to divide Onboarding into a few discrete scenarios. Each scenario introduces a new concept needed to complete Onboarding. </p>
 					</div>
 
-					<img class="grid_3 prefix_1 margin-bottom" src="img/navigation2.jpg">
-
-					<img class="grid_7 suffix_1 margin-bottom" src="img/elevator.jpg">
+					<img class="grid_3 prefix_1" src="img/navigation2.jpg">
+					<img class="grid_7 suffix_1" src="img/elevator.jpg">
+					<p class="grid_8 prefix_2 suffix_2 caption">Elevator concept art</p>
 
 					<div class="grid_8 prefix_2 suffix_2">
 						<p>To navigate between scenarios, we designed a virtual elevator that appeared around the user as they stepped in the start location. This would allow them to traverse vertically to navigate between virtual scenarios while preserving the same physical position in the real world. </p>
 						<p>The elevator metaphor also enabled us to treat each ‘floor’ as a standalone environment and the ‘start location’ as the hub where users would enter and exit each scenario. Once inside the start location, a console appeared to choose a scenario. </p>
 					</div>
 
-				</div>
-			</div>
-
-			<div class="section console">
-				<div class="container_12">
 					<div class="grid_8 prefix_2 suffix_2">
-						<h3>Console</h3>
+						<h4>Console</h4>
 						<p>Limited depth perception in VR makes interacting with 2D UI very difficult. Users often don’t know if they’ve reached out far enough to interact with a screen. For this reason, interacting with 3D objects in VR is preferred over 2D interfaces. </p> 
 						<p>With that in mind, the first approach we tried was arranging each floor as a physical button in the console. The buttons reacted to touch and clearly conveyed to the user that they’ve been pressed, addressing the depth perception limitation.  However, as we started adding floors to Onboarding, we quickly landed with a wall of buttons that felt clunky and unsophisticated. </p>
 						<p>We didn’t want the design of the virtual console to limit the number of floors we could add to the experience. So we asked ourselves: could we design an interface that provides tactile feedback while also supporting a potentially infinite number of floors? </p>
 					</div>
 
-				<img class="grid_10 prefix_1 suffix_1 margin-bottom" src="img/console-concept2.jpg">
+				<img class="grid_10 prefix_1 suffix_1" src="img/console-concept2.jpg">
+				<p class="grid_8 prefix_2 suffix_2 caption">Concept art by L2D</p>
 
 				<div class="grid_8 prefix_2 suffix_2">
 					<p>After a few rounds of explorations, we landed on a console that had two very tactile methods of interaction: a physical dial and a button. Turning the dial controlled a digital screen, which displayed the scenario name and floor number. Once the scenario is selected, users can press the button to travel to it.</p> 
@@ -222,7 +220,8 @@
 					<p>This allowed us to create an interface that felt tactile and reliable in VR while also being flexible and extensible enough to support many scenarios in the future.</p>
 				</div>
 
-				<img class="grid_8 prefix_2 suffix_2 margin-bottom" src="img/console.gif">
+				<img class="grid_10 prefix_1 suffix_1" src="img/console.gif">
+				<p class="grid_8 prefix_2 suffix_2 caption">Console interaction</p>
 			</div>
 		</div>
 
@@ -260,6 +259,7 @@
 				</div>
 
 				<video class="grid_10 prefix_1 suffix_1 margin-bottom" controls><source src="img/floor1-compressed.mp4" type="video/mp4"></video>
+				<p class="grid_8 prefix_2 suffix_2 caption">Video walkthrough of Floor 1</p>
 
 			</div>
 		</div>
@@ -269,7 +269,7 @@
 			<div class="container_12">
 				<div class="clear"></div>
 				<div class="grid_8 prefix_2 suffix_2" style="margin-top: calc(200px + 20vw);">
-					<h3>Floor 2: Interactions</h3>
+					<h3>Floor 2: Learning Interactions</h3>
 					<p>Interacting with virtual objects is necessary for officers to feel a sense of agency in the virtual environment. In order to do this, officers need to learn how to use VR controllers, which may be foreign to them, as this is likely their first experience in VR.</p> 
 					<p>For simple tasks like grabbing and poking, we had the moderator guide the user in Floor 1. For more complex tasks that required interacting with the controller’s buttons, we designed a second floor where they were gradually introduced to their tools: radio, flashlight, baton, and firearm. The moderator instructs the officer to pick up, use, and holster each tool. </p>
 				</div>
@@ -281,6 +281,7 @@
 				</div>
 
 				<video class="grid_10 prefix_1 suffix_1" controls><source src="img/floor2-compressed.mp4" type="video/mp4"></video>
+				<p class="grid_8 prefix_2 suffix_2 caption">Video walkthrough of Floor 2</p>
 
 				<div class="grid_8 prefix_2 suffix_2">	
 					<p>By the end of Floor 2, officers clearly understood how to use the controllers to interact with virtual objects and had a sense of embodiment in the virtual experience that enabled them to react naturally in VR.</p>
@@ -293,19 +294,26 @@
 			<div class="container_12">
 				<div class="clear"></div>
 				<div class="grid_8 prefix_2 suffix_2" style="margin-top: calc(200px + 20vw);">
-					<h3>Floor 3: Expectations</h3>
+					<h3>Floor 3: Competitive Expectations</h3>
 					<p>When officers are introduced to VR, they expect to shoot virtual characters in a video game. However, Trainer is the only game-like experience that gives users a virtual firearm but discourages them from using it to succeed. </p>
 					<p>To address this dichotomy, we designed a third floor that gave officers an opportunity to satisfy their expectations by allowing them to practice what they’ve learned (natural movement, voice commands, and interacting with virtual tools) to accomplish a series of tasks. They’re then given a score for the tasks they’ve completed successfully. This matched their expectations of VR and appealed to officers’ ingrained sense of competitiveness.</p> 
 				</div>
 
-				<img class="grid_10 prefix_1 suffix_1 margin-bottom" src="img/floor3-wireframes.png">
+				<img class="grid_12 margin-bottom" src="img/floor3-blockout.png">
 
 				<div class="grid_8 prefix_2 suffix_2">
 					<p>Each test required the user to identify a target and complete a task, like saying a command, drawing or using a tool. The environment was designed to include several points of interest, prompting the user to stay on their feet and look around. Several obstructions kept officers engaged finding the target, then interacting quickly with the objects in their toolbelt.</p>
+				</div>
+
+				<audio controls class="grid_8 prefix_2 suffix_2"><source src="img/floor3-score.mp3" type="audio/mp3"></audio>
+				<p class="grid_8 prefix_2 suffix_2 caption">Floor 3 soundtrack</p>
+
+				<div class="grid_8 prefix_2 suffix_2">
 					<p>Additionally, we intended to match officers state of mind during the simulation as it would be in the real world. We conducted several user research studies to understand arousal in VR. We learned that sound and lighting played a pivotal role in achieving the intended effect. So, we designed the third level as a night scene outdoors and created a soundtrack to play during the timed tests to increase the levels of intensity.</p>
 				</div>
 
 				<video class="grid_10 prefix_1 suffix_1" controls><source src="img/floor3-compressed.mp4" type="video/mp4"></video>
+				<p class="grid_8 prefix_2 suffix_2 caption">Video walkthrough of Floor 3</p>
 
 				<div class="grid_8 prefix_2 suffix_2">
 					<p>By the end of Floor 3, most officers were engaged and immersed in the virtual environment. They reacted naturally and attentively to the tasks on screen and had fun doing so.</p>
