@@ -763,11 +763,11 @@ footer .right p {
 */
 
 .trainer-hero {
-	background-color: #263238;
-	background-image: url(../trainer/img/trainer-rotation.gif);
-	background-position: center -10vw ;
-/*	background-size: 80% auto;*/
-/*	background-repeat: no-repeat;*/
+	background-color: #000;
+	background-image: url(../trainer/img/trainer-transparent.gif);
+	background-position: center 5vw ;
+	background-size: 70% auto;
+	background-repeat: no-repeat;
 }
 
 .trainer-hero h1 {
@@ -780,7 +780,7 @@ footer .right p {
 }
 
 .problem {
-	background-image: url(../trainer/img/trainer-bg.jpg);
+/*	background-image: url(../trainer/img/trainer-bg.jpg);*/
 	background-size: 100% auto;
 	color: #90a4ae;
 	background-color: #263238;
@@ -801,10 +801,11 @@ footer .right p {
 }
 
 .onboarding {
-/*	background-image: url(../trainer/img/trainer-bg.jpg);
-*/	background-size: 100% auto;
-	color: #263238;
-	background-color: #90a4ae;
+	background-image: url(../trainer/img/onboarding.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color: #45351b;
+	background-color: #f8e3c4;
 }
 
 /*.onboarding h3 {
