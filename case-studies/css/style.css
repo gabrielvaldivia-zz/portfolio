@@ -197,6 +197,7 @@ ol {
 a {
 	text-decoration: none;
 	font-style: italic;
+	color: inherit;
 }
 
 a:hover {
