@@ -764,11 +764,12 @@ footer .right p {
 */
 
 .trainer-hero {
-	background-color: #000;
+	background-color: #263238;
 	background-image: url(../trainer/img/trainer-transparent.gif);
 	background-position: center 5vw ;
 	background-size: 70% auto;
 	background-repeat: no-repeat;
+	background-blend-mode: lighten;
 }
 
 .trainer-hero h1 {
