@@ -785,7 +785,7 @@ footer .right p {
 	background-size: 100% auto;
 	color: #90a4ae;
 	background-color: #263238;
-	color: #90a4ae;
+	color: white;
 }
 
 .problem h3, .problem h4 {
@@ -794,7 +794,7 @@ footer .right p {
 
 .hypothesis {
 	background-color: #1de9b6;
-	color: white;
+
 }
 
 .bridge {
