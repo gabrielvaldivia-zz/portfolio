@@ -767,7 +767,7 @@ footer .right p {
 	background-color: #263238;
 	background-image: url(../trainer/img/trainer-transparent.gif);
 	background-position: center 5vw ;
-	background-size: 70% auto;
+	background-size: calc(150px + 100vh) auto;
 	background-repeat: no-repeat;
 	background-blend-mode: lighten;
 }
